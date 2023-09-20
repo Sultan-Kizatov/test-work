@@ -1,0 +1,53 @@
+:root {
+  --color-background: rgba(16, 16, 29, 0.902);
+  --color-text: #FFF;
+  --color-blue: #3E9CDC;
+  --color-black: #000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  color: var(--color-text);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+    height: 100%;
+    background: url('../images/bg-layer.png') center center/cover no-repeat, #272733;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 576px;
+        padding: 0 10px;
+    }
+}
