@@ -12,7 +12,7 @@
     const navMenu = [
         {
             title: 'Бизнес',
-            link: '/',
+            link: 'home',
         },
         {
             title: 'О нас',
